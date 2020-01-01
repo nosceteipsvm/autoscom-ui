@@ -9,6 +9,7 @@ import { QueryI } from '../../interfaces/query';
 })
 export class PostsComponent implements OnInit {
 	posts: object[] = [];
+	loading: boolean = true;
 	n_results: number = this.posts.length;
 	params: QueryI;
 
@@ -26,7 +27,10 @@ export class PostsComponent implements OnInit {
 		    		currency: 'USD'
 		    	}).format(post.price);
 			})
+
+			this.loading = false;
 		});
+
 	}
 
 }

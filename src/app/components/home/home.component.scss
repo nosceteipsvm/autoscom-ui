@@ -1,15 +1,8 @@
-.showcase {
-	margin-top: 50px;
-	padding: 3em;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	flex-direction: column;
-	background: url('../../../assets/5e19abdb56_1024.jpg');
+#showcase {
+	min-height: 40vh;
+	background: url('../../../assets/shallow-focus-photo-of-people-riding-convertible-coupe-3200058.jpg');
 	background-size: cover;
 	background-position: center;
-	position: relative;
 }
 
 .search-content {
@@ -22,7 +15,7 @@
 	background-position: center;
 }
 #w2 {
-	background: url('http://tuvehiculo.clbs9571.now.sh/public/2018-mercedes-amg-s63-coupe-2.jpg');
+	background: url('../../../assets/vehicle-interior-close-up-photography-2794001.jpg');
 	background-size: cover;
 	background-position: center;
 }

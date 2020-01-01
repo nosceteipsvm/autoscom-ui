@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   	constructor(
   		private fetch: FetchService,
   		private router: Router
-  	) { }
+  	) {	}
 
 	async ngOnInit() {
 		await this.fetch.getAllManu().subscribe(async (all_makes) => {
@@ -42,7 +42,6 @@ export class HomeComponent implements OnInit {
 		await this.fetch.getAllModels(manuf).subscribe(async (all_models) => {
 			this.models = await all_models;
 			this.init_mon = await this.models[0];
-			console.log(this.models);
 			this.allowed = true;
 		});
 	}
